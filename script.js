@@ -12,3 +12,7 @@ setTimeout(() => {
   document.getElementById("proposal").style.display = "none";
   document.getElementById("final").classList.remove("hidden");
 }, 20000);
+function playMusic() {
+  const music = document.getElementById("bgMusic");
+  music.play();
+}
