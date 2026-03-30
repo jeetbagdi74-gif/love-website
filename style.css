@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Glow Text */
+h1, h2 {
+  text-shadow: 0 0 20px pink;
+}
+
+/* Intro */
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 3s ease;
+}
+
+/* Hidden sections */
+.hidden {
+  display: none;
+}
+
+/* Story */
+#story {
+  padding: 50px;
+  font-size: 20px;
+  animation: fadeIn 3s ease;
+}
+
+/* Proposal */
+.main-img {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px pink;
+}
+
+.reply {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Final */
+.yes-text {
+  font-size: 30px;
+  margin-top: 50px;
+  animation: glow 2s infinite alternate;
+}
+
+.slideshow {
+  position: relative;
+  margin-top: 40px;
+}
+
+.slideshow img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes glow {
+  from {text-shadow: 0 0 10px pink;}
+  to {text-shadow: 0 0 30px red;}
+}
+
+@keyframes float {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(-20px);}
+  100% { transform: translateY(0px);}
+}
